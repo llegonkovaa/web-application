@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продукты - Магазин Косметики "ЭЛЬВИРА"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">"ЭЛЬВИРА"</div>
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="products.html">Продукты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Наши продукты</h1>
+        <div class="product">
+            <div class="product-info">
+                <h2>Увлажняющий крем</h2>
+                <p>Описание: Легкий увлажняющий крем для ежедневного использования.</p>
+                <p>Цена: 500 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="krem.jpg" alt="Увлажняющий крем">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <h2>Тональный крем</h2>
+                <p>Описание: Легкий тональный крем с защитой от солнца.</p>
+                <p>Цена: 700 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="ton.jpg" alt="Тональныйф крем">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <h2>Сыворотка для лица</h2>
+                <p>Описание: Сыворотка с витамином C для яркости кожи.</p>
+                <p>Цена: 1200 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="savotka.jpg" alt="Сыворотка для лица">
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-info">
+                <h2>Пудра</h2>
+                <p>Описание: Нежная пудра для матирования кожи.</p>
+                <p>Цена: 700 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="pydra.jpg" alt="Пудра">
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>Помада</h2>
+                <p>Описание: Увлажняющая помада с насыщенным цветом.</p>
+                <p>Цена: 400 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="pomada.jpg" alt="Помада">
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>Маска для лица</h2>
+                <p>Описание: Освежающая маска для глубокого увлажнения.</p>
+                <p>Цена: 600 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="maska.jpg" alt="Маска для лица">
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>Гель для умывания</h2>
+                <p>Описание: Очищающий гель для всех типов кожи.</p>
+                <p>Цена: 450 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="gel.jpg" alt="Гель для умывания">
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>Скраб для тела</h2>
+                <p>Описание: Скраб для тела с натуральными экстрактами.</p>
+                <p>Цена: 550 руб.</p>
+            </div>
+            <div class="product-image">
+                <img src="scrab.jpg" alt="Скраб для тела">
+            </div>
+        </div>
+
+        <h3>Оставьте заявку на покупку:</h3>
+        <form id="feedback-form">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Продукт:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Отправить заявку</button>
+        </form>
+        <div id="success-message" style="display: none; color: green; margin-top: 10px;">
+            Заявка успешно отправлена!
+        </div>
+        <div id="error-message" style="display: none; color: red; margin-top: 10px;">
+            Пожалуйста, заполните все поля корректно.
+        </div>
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <p>&copy; 2023 Магазин Косметики "ЭЛЬВИРА"</p>
+    </footer>
+</body>
+</html>

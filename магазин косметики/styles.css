@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFC0CB; /* Светлый розовый фон */
+}
+header {
+    background-color: #FF69B4; /* Средний розовый для заголовка */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #000000; /* Белый текст для ссылок */
+}
+main {
+    padding: 20px;
+}
+
+.product {
+    display: flex; /* Используем Flexbox для размещения элементов в строку */
+    border: 1px solid #FF69B4; /* Розовая граница карточек продуктов */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF; /* Белый фон */
+    border-radius: 8px; /* Закругленные углы */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+.product-info {
+    flex: 1; /* Занимает оставшееся пространство */
+    margin-right: 20px; /* Отступ между текстом и изображением */
+}
+.product-image {
+    flex-shrink: 0; /* Не сжимается, чтобы сохранить размер изображения */
+}
+.product img {
+    max-width: 200px; /* Ограничиваем ширину изображения */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 8px; /* Закругленные углы для изображения */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для изображения */
+    transition: transform 0.3s ease; /* Плавный переход при наведении */
+}
+.product img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+.product h2 {
+    margin: 10px 0; /* Отступы для заголовка */
+    color: #FF1493; /* Яркий розовый цвет заголовка */
+}
+.product:hover {
+    transform: scale(1.05);
+    border-color: #FF1493; /* Яркий розовый при наведении */
+    transition: transform 0.3s ease; /* Плавный переход при наведении */
+}
+.product p {
+    color: #555; /* Цвет текста для описания и цены */
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF69B4; /* Средний розовый для подвала */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #000000; /* Белый текст для подвала */
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+label {
+    margin-top: 10px;
+}
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    margin-top: 20px;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #FF1493;
+}
